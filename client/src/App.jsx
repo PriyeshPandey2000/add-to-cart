@@ -30,20 +30,14 @@ const App = () => {
           <Route path="" element={<Register />} />
           <Route path="/login" element={<Login />} />
          
-          {/* <Route
-        path="/products"
-         element={<Products addToCart={addToCart} cartItems={cartItems}  removeFromCart={removeFromCart} />}
-          /> */}
-          <Route
-  path="/products"
-  element={<ProductsWrapper />}
-    />
-<Route path="/cart" element={<CartWrapper />} />
+        
+         <Route
+          path="/products"
+         element={<ProductsWrapper />}
+          />
+          <Route path="/cart" element={<CartWrapper />} />
 
-          {/* <Route
-            path="/cart"
-            element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />}
-          /> */}
+         
         </Routes>
       </div>
     </Router>
